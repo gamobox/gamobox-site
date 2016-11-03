@@ -1,0 +1,27 @@
+.header {
+  background: #fff;
+  .container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+  }
+  @at-root {
+    &__brand {
+      color: #000;
+      font-family: 'AquaGrotesque';
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1;
+      a {
+        color: inherit;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

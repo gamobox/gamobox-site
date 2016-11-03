@@ -1,0 +1,68 @@
+{{ partial "meta.html" . }}
+<main class="content-wrapper">
+
+  <div class="heroUnit">
+    <div id='player' class="heroUnit__video"></div>
+    <div class="heroUnit__filter"></div>
+    <div class="container">
+      <h1 class="index-headline">gamobox</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content">
+
+      <div class="callout">
+        <h1>gamo / Yuki Shibata</h1>
+        <h2>Frontend Web Development, Interface Design, Composing</h2>
+      </div>
+
+      <h4>works</h4>
+
+      <div class="worksBlock">
+        <div class="worksBlock__year">2016</div>
+        <div class="worksBlock__list">
+          <ul class="resetedUl">
+            <li>Umio - umio Remixes</li>
+            <li>アサルトタイムきらら - Time to interfere your Assault</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="worksBlock">
+        <div class="worksBlock__year">2015</div>
+        <div class="worksBlock__list">
+          <ul class="resetedUl">
+            <li>switchbreak - Blessed Melodies</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="worksBlock">
+        <div class="worksBlock__year">2014</div>
+        <div class="worksBlock__list">
+          <ul class="resetedUl">
+            <li>switchbreak - COSMOS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="worksBlock">
+        <div class="worksBlock__year">2013</div>
+        <div class="worksBlock__list">
+          <ul class="resetedUl">
+            <li>erogeselektor - True Route</li>
+            <li>gamo - Quintil</li>
+          </ul>
+        </div>
+      </div>
+
+      <h4>contact</h4>
+
+      <p>{{ .Site.Params.email }}</p>
+
+    </div><!--/.content-->
+
+  </div><!--/.container-->
+</main>
+{{ partial "footer.html" . }}

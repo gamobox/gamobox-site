@@ -1,0 +1,78 @@
+.index-headline {
+  text-align: center;
+  font-family: 'AquaGrotesque';
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #FFF;
+  text-shadow: 0px 0px 15px rgba(0,0,0,.5);
+  letter-spacing: .8em;
+  margin-left: .8em;
+  position: relative;
+  z-index: 10;
+}
+
+.index-subheadline {
+  @include span-columns(12);
+  text-align: center;
+}
+.index-articles {
+  @include span-columns(6);
+  text-align: center;
+}
+.index-pages {
+  @include span-columns(6);
+  text-align: center;
+}
+
+.heroUnit {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  background-position: center;
+  background-size: cover;
+  @at-root {
+    &__video {
+      opacity: 1;
+      position: absolute;
+      z-index: 0;
+    }
+    &__filter {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.callout {
+  margin: 5rem auto;
+}
+
+@media (max-width: map-get($breakpoint, md)) {
+  .index-headline  {
+    font-size: 36px;
+  }
+}
+
+
+@media (max-width: map-get($breakpoint, md)) {
+  .index-headline  {
+    font-size: 2rem;
+    letter-spacing: .4em;
+    margin-left: .4em;
+  }
+  .heroUnit {
+    height: 480px;
+  }
+  .callout {
+    margin: 2.5rem auto;
+  }
+}

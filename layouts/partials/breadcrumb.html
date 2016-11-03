@@ -1,0 +1,15 @@
+<nav class="breadcrumb">
+  <ul class="breadcrumb__list">
+    <li class="breadcrumb__item">
+      <a href="{{ .Site.BaseURL }}"><span>home</span></a>
+    </li>
+
+    {{ with .Section }}
+    <li class="breadcrumb__item" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="{{ $.Site.BaseURL }}{{ . | urlize }}/" itemprop="url"><span itemprop="title">{{ . }}</span></a>
+    </li>
+    {{ end }}
+
+    <li class="breadcrumb__item active">{{ .Title }}</li>
+  </ul>
+</nav>

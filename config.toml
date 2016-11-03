@@ -1,0 +1,13 @@
+baseurl = "https://gamobox.github.io/"
+title = "gamobox"
+layoutdir = "layouts"
+publishdir = "public"
+languageCode = "ja"
+
+[params]
+  author = "Yuki Shibata"
+  copyright = "gamobox All rights reserved."
+  twitter   = "https://twitter.com/gamobox"
+  soundcoud  = "https://soundcloud.com/gamobox"
+  email     = "gamobox@gmail.com"
+  analytics = ""

@@ -1,0 +1,17 @@
+.breadcrumb {
+  @at-root {
+    &__list {
+      @include clearfix;
+      @include resetedUl;
+      overflow: auto;
+    }
+    &__item {
+      float: left;
+      &:not(.active)::after {
+        content: '/';
+        margin: 0 .2rem;
+        opacity: .4;
+      }
+    }
+  }
+}

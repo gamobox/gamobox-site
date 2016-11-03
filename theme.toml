@@ -1,0 +1,12 @@
+name = "gamobox"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = "http://gamobox.com/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.1
+
+[author]
+  name = "Yuki Shibata"
+  homepage = "http://gamobox.com"

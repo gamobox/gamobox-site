@@ -1,0 +1,50 @@
+// =============================================================================
+// main.scss
+// -----------------------------------------------------------------------------
+// Entry point to transpile to main.css.
+// Only for imports and comments!
+// =============================================================================
+
+// 3rd Party
+@import "vendor/_normalize";
+@import "vendor/bourbon/_bourbon";
+@import "vendor/neat/_neat";
+
+
+// 1st Party
+@import 'utils/settings';
+@import 'utils/verticalrythm';
+
+// Base Styles
+@import 'base/base';
+@import 'base/typography';
+
+// Layout Styles
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/container';
+
+// Component Styles
+@import 'components/breadcrumb';
+
+// Page Styles
+@import 'pages/index';
+
+// Component Styles
+// Buttons, Navigations, etc.
+
+
+.resetedUl {
+  @include resetedUl;
+}
+
+.worksBlock {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  @at-root {
+    &__year {
+      flex: 0 0 100px;
+    }
+  }
+}

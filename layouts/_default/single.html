@@ -1,0 +1,14 @@
+{{ partial "meta.html" . }}
+{{ partial "single_json_ld.html" . }}
+
+{{ partial "header.html" . }}
+<main class="content-wrapper">
+  <div class="container">
+
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p><a href="{{ .Site.BaseURL }}">Home</a></p>
+
+  </div>
+</main>
+{{ partial "footer.html" . }}

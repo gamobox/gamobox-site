@@ -1,0 +1,35 @@
+// =============================================================================
+// _base.scss
+// -----------------------------------------------------------------------------
+// Basic Styles for all pages
+// =============================================================================
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  @include outer-container;
+  padding-left: 1rem;
+  padding-right: 1rem;
+//  @include debugShowVerticalGrid;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  min-height: 640px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: map-get($breakpoint, md)) {
+  .content {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
